@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Comments.AddComment.AddCommentActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_addComment_actionbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        >
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/img_addComment_back"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_arrow_forward_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            />
+
+        <TextView
+            android:layout_toLeftOf="@+id/img_addComment_back"
+            android:text="ثبت امتیاز"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="14dp"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_addComment_writeComment"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:text="ثبت امتیاز و نوشتن نظر"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_addComment_setPoint"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorGrey500"
+            android:text="ثبت امتیاز و بازگشت"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

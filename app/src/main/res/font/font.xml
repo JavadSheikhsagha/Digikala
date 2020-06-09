@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <font android:fontWeight="400"
+        android:font="@font/behdad"
+        android:fontStyle="normal"/>
+    <font app:fontWeight="400"
+        app:font="@font/behdad"
+        app:fontStyle="normal"/>
+
+</font-family>

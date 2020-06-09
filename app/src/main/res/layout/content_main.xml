@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+    <ss.com.bannerslider.Slider
+        android:id="@+id/slider_main"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:slider_interval="5000"
+        app:slider_loopSlides="true"
+        app:slider_indicatorSize="4dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_main_cats"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24dp"
+                android:layout_alignParentRight="true"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:text="پیشنهاد"
+                android:id="@+id/txt_pishnahad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/txt_pishnahad"
+                android:layout_marginRight="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:text="شگفت انگیز"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txt_hour"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:padding="4dp"
+                android:background="@drawable/shape_timer"
+                tools:text="12"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="24sp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/txt_hour"
+                android:layout_centerVertical="true"
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/txt_hour"
+                android:id="@+id/txt_min"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:padding="4dp"
+                android:background="@drawable/shape_timer"
+                tools:text="12"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:textSize="24sp"
+                android:layout_toRightOf="@+id/txt_min"
+                android:layout_centerVertical="true"
+                android:text=":"
+                android:layout_marginLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/txt_min"
+                android:id="@+id/txt_sec"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:padding="4dp"
+                android:background="@drawable/shape_timer"
+                tools:text="12"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main_wonderful_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            tools:src="@mipmap/ic_launcher"
+            android:id="@+id/img_main_image1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+
+            <LinearLayout
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <androidx.cardview.widget.CardView
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:background="@color/colorBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:id="@+id/img_main_image2"
+                        tools:src="@color/colorBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <androidx.cardview.widget.CardView
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:background="@color/colorBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:id="@+id/img_main_image3"
+                        tools:src="@color/colorBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="4dp"
+            android:id="@+id/img_main_image4"
+            tools:src="@color/colorGrey700"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                style="bold"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:text="لیست کامل"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                style="bold"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:text="جدیدترین محصولات"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main_newest_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

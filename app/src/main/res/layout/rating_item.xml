@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        tools:text="کارایی"
+        android:id="@+id/rating_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        />
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:layout_width="match_parent"
+            android:id="@+id/progress_rating_item"
+            android:layout_toLeftOf="@+id/rating_item_title"
+            android:layout_height="20dp"
+            android:layout_marginRight="16dp"
+            app:rcProgress="3.5"
+            app:rcMax="5"
+            app:rcRadius="4dp"
+            app:rcBackgroundPadding="1dp"
+            app:rcReverse="true"
+            app:rcProgressColor="@color/colorGreen"
+            app:rcBackgroundColor="@color/colorGrey500" />
+
+</RelativeLayout>

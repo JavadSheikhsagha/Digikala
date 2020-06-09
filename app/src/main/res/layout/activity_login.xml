@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity"
+    android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            tools:ignore="MissingConstraints" >
+
+            <ImageView
+                android:id="@+id/img_toolbar_shoppingCart"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_shopping_cart_white_24dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <ImageView
+                android:layout_toRightOf="@+id/img_toolbar_shoppingCart"
+                android:layout_marginLeft="18dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_search_white_24dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <TextView
+                android:paddingBottom="4dp"
+                android:textSize="18sp"
+                android:layout_marginRight="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ورود"/>
+
+            <ImageView
+
+                android:id="@+id/img_close_login"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_close_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:drawableRight="@drawable/ic_mail_black_24dp"
+            android:textSize="12sp"
+        android:layout_below="@+id/action_bar"
+        android:hint="     شماره موبایل یا ایمیل"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/edt_Login_Email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:drawableRight="@drawable/ic_lock_black_24dp"
+        android:layout_below="@+id/edt_Login_Email"
+        android:gravity="right"
+        android:hint=" کلمه عبور    "
+        android:textSize="12sp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/edt_Login_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_below="@+id/edt_Login_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorGrey700"
+            android:text="نمایش کلمه عبور"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cb_Login_ShowPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/linear1"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_Forgot_Pass"
+                android:textColor="@color/colorGrey600"
+                android:text="کلمه عبورم را فراموش کردم!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:paddingTop="6dp"
+                android:id="@+id/txt_SignUp"
+                android:textColor="@color/colorGreen"
+                android:text="ثبت نام در دیجی کالا"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+        </LinearLayout>
+    <Button
+        android:id="@+id/btn_Login"
+        android:textColor="@color/colorWhite"
+        android:text="ورود"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"
+        android:background="@color/colorAccent" />
+
+
+</RelativeLayout>

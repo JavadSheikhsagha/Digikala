@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/relllllllllllllllll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_bottomSheet_plus"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        app:srcCompat="@drawable/ic_exposure_plus_1_black_24dp"
+        android:tint="@color/colorGrey600"/>
+
+    <TextView
+        android:textColor="@color/colorGrey700"
+        android:layout_toLeftOf="@+id/img_bottomSheet_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ساختن پوشه جدید"
+        android:layout_marginRight="8dp"
+        android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_below="@+id/relllllllllllllllll"
+            android:text="پوشه های من"
+            android:padding="8dp"
+            android:background="@color/colorGrey300"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/rel_bottomSheet_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:tint="@color/colorGrey600"
+            android:id="@+id/img_bottomSheet_Cart"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:textColor="@color/colorGrey700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="علاقه مندی ها "
+            android:layout_toLeftOf="@+id/img_bottomSheet_Cart"
+            />
+
+        <TextView
+            android:id="@+id/txt_bottomSheet_Count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="2"
+            android:layout_marginLeft="24dp"
+            android:textColor="@color/colorGrey700"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

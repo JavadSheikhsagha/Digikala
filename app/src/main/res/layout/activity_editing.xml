@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_actionbar_parent"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/ic_arrow_forward_black_24dp"
+            android:tint="@color/colorWhite"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:id="@+id/img_editing_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ویرایش اطلاعات"
+            android:textColor="@color/colorWhite"
+            android:layout_toLeftOf="@+id/img_editing_back"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/rel_actionbar_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="نام و نام خانوادگی"
+                    android:id="@+id/edt_editing_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="کد ملی"
+                    android:id="@+id/edt_editing_codeMelli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12sp"
+
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="تلفن ثابت"
+                    android:textSize="12sp"
+                    android:id="@+id/edt_editing_phoneHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="12sp"
+                    android:hint="شماره تلفن همراه"
+                    android:id="@+id/edt_editing_phoneCell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textSize="12sp"
+                    android:hint="پست الکترونیکی"
+                    android:id="@+id/edt_editing_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_toLeftOf="@+id/chk_editing_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="عضویت در خبرنامه دیجی کالا"
+                    />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:buttonTint="@color/colorGreen"
+                    android:checked="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/chk_editing_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تاریخ تولد"
+                    android:layout_below="@+id/chk_editing_checkBox"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="12dp"
+                    android:id="@+id/txt_birth"
+                    />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_editing_day"
+                    android:layout_margin="8dp"
+                    android:layout_below="@+id/txt_birth"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_editing_month"
+                    android:layout_margin="8dp"
+                    android:layout_below="@+id/txt_birth"
+                    android:layout_toLeftOf="@id/spinner_editing_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_editing_year"
+                    android:layout_margin="8dp"
+                    android:layout_below="@+id/txt_birth"
+                    android:layout_toLeftOf="@+id/spinner_editing_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner_editing_year"
+                    android:layout_alignParentRight="true"
+                    android:text="جنسیت"
+                    android:id="@+id/txt_sex"
+                    />
+
+                <RadioGroup
+                    android:layout_marginBottom="70dp"
+                    android:id="@+id/rg_editing_sex"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txt_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <RadioButton
+                        android:buttonTint="@color/colorGreen"
+                        android:checked="true"
+                        android:layout_margin="8dp"
+                        android:id="@+id/rb_editing_man"
+                        android:text="مرد"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:buttonTint="@color/colorGreen"
+                        android:layout_margin="8dp"
+                        android:id="@+id/rb_editing_lady"
+                        android:text="زن"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_editing_submit"
+        android:textColor="@color/colorWhite"
+        android:text="ثبت اطلاعات"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGreen"/>
+</RelativeLayout>

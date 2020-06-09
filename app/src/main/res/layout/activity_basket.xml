@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGrey300"
+    tools:context=".Basket.BasketActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_basket_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:srcCompat="@drawable/ic_close_white_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:id="@+id/img_basket_close"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سبد خرید"
+            android:textColor="@color/colorWhite"
+            android:layout_toLeftOf="@+id/img_basket_close"
+            android:layout_marginRight="8dp"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_basket_cart"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:srcCompat="@drawable/ic_shopping_cart_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            android:textSize="10sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_count_white"
+            android:textColor="@color/colorPrimary"
+            android:paddingRight="6dp"
+            android:paddingLeft="6dp"
+            android:id="@+id/txt_basket_count"
+            />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/card_basket_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_basket_rv"
+        android:layout_above="@+id/btn_basket_submit"/>
+
+    <Button
+        android:text=" خرید خود را نهایی کنید"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/shape_green_button"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_basket_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_basket_actionbar"
+        android:id="@+id/card_basket_actionbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorGreen"
+                android:text="جمع کل خرید"
+                android:padding="8dp"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 تومان"
+                android:id="@+id/txt_basket_price"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorGreen"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

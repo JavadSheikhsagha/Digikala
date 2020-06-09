@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <ImageView
+                android:id="@+id/img_toolbar_menu"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_menu_white_24dp"
+                />
+
+            <ImageView
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_toolbar_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/digikalalogofinal"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rel_main_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="16dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_shopping_cart_white_24dp"
+                    android:id="@+id/img_toolbar_shoppingcart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    />
+                <TextView
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="10sp"
+                    android:id="@+id/txt_main_basketCount"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/shape_count_white"
+                    android:paddingRight="6dp"
+                    android:paddingLeft="6dp"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/rel_main_cart"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_search_white_24dp"
+                android:id="@+id/img_toolbar_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

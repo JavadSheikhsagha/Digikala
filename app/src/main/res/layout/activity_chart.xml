@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Chart.ChartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <ImageView
+
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:tint="@color/colorWhite"
+            android:id="@+id/img_chart_back"
+            app:srcCompat="@drawable/ic_arrow_forward_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نمودار قیمت"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/img_chart_back"/>
+
+
+
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/chart_chart_chart"
+        />
+
+
+</LinearLayout>
